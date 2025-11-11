@@ -90,7 +90,7 @@
       {
         "name": "SignData",
         "types": ["text", "binary", "cell"]
-      }  
+      }
     ]
   },
   {
@@ -223,7 +223,7 @@
         "extraCurrencySupported": false
       }
     ]
-  },  
+  },
   {
     "app_name": "hot",
     "name": "HOT",
@@ -523,18 +523,18 @@
     "about_url": "https://www.tokenpocket.pro",
     "universal_url": "https://tp-lab.tptool.pro/ton-connect/",
     "bridge": [
-        {
-            "type": "js",
-            "key": "tokenpocket"
-        },
-        {
-            "type": "sse",
-            "url": "https://ton-connect.mytokenpocket.vip/bridge"
-        }
+      {
+        "type": "js",
+        "key": "tokenpocket"
+      },
+      {
+        "type": "sse",
+        "url": "https://ton-connect.mytokenpocket.vip/bridge"
+      }
     ],
     "platforms": [
-        "ios",
-        "android"
+      "ios",
+      "android"
     ],
     "features": [
       {
@@ -554,7 +554,7 @@
       {
         "type": "sse",
         "url": "https://bridge.uxuy.me/bridge"
-     }
+      }
     ],
     "platforms": ["ios", "android", "macos", "windows", "linux"],
     "features": [
@@ -696,15 +696,15 @@
     "about_url": "https://token.im",
     "universal_url": "https://connect.token.im/link/ton-connect",
     "deepLink": "imtokenv2://link/ton-connect",
-    "bridge": [ 
-       {
-          "type": "sse",
-          "url": "https://connect.token.im/tonbridge"
-       },
-       {
-          "type": "js",
-          "key": "imToken"
-       }
+    "bridge": [
+      {
+        "type": "sse",
+        "url": "https://connect.token.im/tonbridge"
+      },
+      {
+        "type": "js",
+        "key": "imToken"
+      }
     ],
     "platforms": ["ios", "android"],
     "features": [
@@ -734,30 +734,49 @@
         "extraCurrencySupported": false
       },
       {
-          "name": "SignData",
-          "types": [
-            "text", "binary"
-          ]
-        }
+        "name": "SignData",
+        "types": [
+          "text", "binary"
+        ]
+      }
     ]
   },
   {
-    "app_name": "onekey",
-    "name": "OneKey",
-    "image": "https://uni.onekey-asset.com/static/logo/onekey-x288.png",
-    "about_url": "https://onekey.so",
+    "app_name": "orniton",
+    "name": "Orniton",
+    "image": "https://bridge.orniton.org/wallet_logo.png",
+    "about_url": "https://orniton.org",
+    "universal_url": "https://t.me/Ornitonbot?attach=wallet",
     "bridge": [
       {
+        "type": "sse",
+        "url": "https://bridge.orniton.dev.unlima.com/bridge"
+      },
+      {
         "type": "js",
-        "key": "onekeyTonWallet"
+        "key": "orniton"
       }
     ],
-    "platforms": ["chrome"],
+    "platforms": [
+      "ios",
+      "android",
+      "macos",
+      "windows",
+      "linux"
+    ],
     "features": [
       {
         "name": "SendTransaction",
-        "maxMessages": 4,
-        "extraCurrencySupported": false
+        "maxMessages": 255,
+        "extraCurrencySupported": true
+      },
+      {
+        "name": "SignData",
+        "types": [
+          "text",
+          "binary",
+          "cell"
+        ]
       }
     ]
   }
